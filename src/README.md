@@ -1,3 +1,4 @@
+
 # 🚀 Stellar Pay
 
 **A modern, secure XLM payment application built on the Stellar Testnet**
@@ -10,15 +11,7 @@
 
 </div>
 
-----
-<img width="817" height="716" alt="Screenshot 2026-03-02 160146" src="https://github.com/user-attachments/assets/cc40bef4-cd8c-4a42-9a6e-b2a4c41643f2" />
-<img width="440" height="761" alt="Screenshot 2026-03-02 160335" src="https://github.com/user-attachments/assets/f4abe129-f4d1-4569-a023-1e84a0634fcc" />
-<img width="1499" height="717" alt="Screenshot 2026-03-02 160720" src="https://github.com/user-attachments/assets/facaff89-04ab-45d8-be3f-7f7879389766" />
-🔐 Authentication Pages
-
-1)Login Page – wallet connect / email login
-2)Register / Sign-up Page (optional if wallet-only)
-3)Profile Setup Page
+---
 
 ## 📖 About
 
@@ -76,7 +69,28 @@ git clone https://github.com/your-username/stellar-pay.git
 cd stellar-pay
 ```
 
-### 2. Run the Development Server
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up Environment Variables
+
+Copy the example env file and add your keys:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` and set your values:
+
+```env
+GEMINI_API_KEY="your-gemini-api-key"
+APP_URL="http://localhost:3000"
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
@@ -84,7 +98,7 @@ npm run dev
 
 The app will be available at **http://localhost:3000**
 
-### 3. Build for Production
+### 5. Build for Production
 
 ```bash
 npm run build
@@ -120,7 +134,8 @@ If your balance is 0, click **"Fund with Friendbot"** to receive **10,000 free t
 ### Step 7 — Confirm Transaction
 Approve the transaction in the Freighter popup. You'll see:
 - ✅ **Success message** with a link to view on [Stellar Expert](https://stellar.expert/explorer/testnet)
-- 
+- ❌ **Error message** if something goes wrong (e.g., insufficient funds)
+
 ---
 
 ## 📁 Project Structure
@@ -187,3 +202,22 @@ stellar-pay/
 
 ---
 
+## ⚠️ Disclaimer
+
+> This application is built for the **Stellar Testnet** only. Testnet XLM has no real monetary value. Do not use this application with Mainnet credentials or real funds without proper security audits.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**Built with ❤️ for the Stellar ecosystem**
+
+[Stellar](https://stellar.org) • [Freighter](https://freighter.app) • [React](https://react.dev)
+
+</div>
